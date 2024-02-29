@@ -2,11 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="com.Lumen.YourStore.utils.CustomListner"></listener>
+		<listener class-name="com.Lumen.YourStore.utils.CustomListner" />
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.Lumen.YourStore.Tests.LandingPageTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="com.Lumen.YourStore.Tests.SearchPageTest" />
+			<class name="com.Lumen.YourStore.Tests.LoginPageTest" />
+			<class name="com.Lumen.YourStore.Tests.RegistrationPageTest" />
+			<class name="com.Lumen.YourStore.Tests.DatePickerTrail" />
+			<class name="com.Lumen.YourStore.Tests.LandingPageTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

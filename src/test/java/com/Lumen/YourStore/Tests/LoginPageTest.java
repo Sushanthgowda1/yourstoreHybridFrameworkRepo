@@ -25,12 +25,12 @@ public class LoginPageTest extends Base {
 	public LoginPageTest() {
 		super();
 	}
-	
-	@DataProvider(name ="LoginData")
+
+	@DataProvider(name = "LoginData")
 	public Object[][] supplyTestData() throws IOException {
 
-		Object[][] data= XLutility.getcellData("sheet1");
-		
+		Object[][] data = XLutility.getcellData("sheet1");
+
 		return data;
 	}
 
@@ -47,20 +47,32 @@ public class LoginPageTest extends Base {
 		driver.quit();
 	}
 
-	@Test(dataProvider ="LoginData")
-	public void verifyLoginWithExcelData(String username, String password) {
-		
+	@Test(dataProvider = "LoginData")
+	public void verifyLoginWithInvalidExcelData(String username, String password) {
+
 		landingPage.lanuchApplication(prop.getProperty("url"));
 		String actualTitle = landingPage.titleOfHomePage();
 		Assert.assertEquals(actualTitle, prop.getProperty("title"));
 		loginPage = landingPage.clickOnLoginlink();
 		loginPage.enterEmail(username);
 		loginPage.enterpassword(password);
-		myAccount=loginPage.clickOnloginBtn();
-		String actualHeader=myAccount.verifyPageHeader();
-		Assert.assertEquals(actualHeader, prop.getProperty("accountpageHeader"));
-		landingPage=myAccount.clickOnHomeBreadCrumb();
-			
+		loginPage.clickOnloginBtn();
+		Assert.assertEquals(loginPage.getErrorMsg(), dataProp.getProperty("emailNoMatch"));
+
+	}
+
+	@Test
+	public void verifyLoginWithvalidData() {
+
+		landingPage.lanuchApplication(prop.getProperty("url"));
+		String actualTitle = landingPage.titleOfHomePage();
+		Assert.assertEquals(actualTitle, prop.getProperty("title"));
+		loginPage = landingPage.clickOnLoginlink();
+		loginPage.enterEmail(prop.getProperty("username"));
+		loginPage.enterpassword(prop.getProperty("password"));
+		myAccount = loginPage.clickOnloginBtn();
+		String actualHeader = myAccount.verifyPageHeader();
+		Assert.assertEquals(actualHeader,"My Account");
 
 	}
 

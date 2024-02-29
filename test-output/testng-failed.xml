@@ -5,7 +5,7 @@
     <classes>
       <class name="com.Lumen.YourStore.Tests.LoginPageTest">
         <methods>
-          <include name="verifyLoginWithExcelData" invocation-numbers="0 1 2"/>
+          <include name="verifyLoginWithvalidData"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
