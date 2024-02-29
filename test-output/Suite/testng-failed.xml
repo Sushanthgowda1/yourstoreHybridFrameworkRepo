@@ -6,13 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Lumen.YourStore.Tests.LandingPageTest">
+      <class name="com.Lumen.YourStore.Tests.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="verifyLandingPageTitle"/>
+          <include name="verifyLoginWithExcelData" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Lumen.YourStore.Tests.LandingPageTest -->
+      </class> <!-- com.Lumen.YourStore.Tests.LoginPageTest -->
+      <class name="com.Lumen.YourStore.Tests.DatePickerTrail">
+        <methods>
+          <include name="datePicker"/>
+        </methods>
+      </class> <!-- com.Lumen.YourStore.Tests.DatePickerTrail -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

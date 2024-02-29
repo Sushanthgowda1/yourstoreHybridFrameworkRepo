@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T15:15:14 IST" name="Default suite" finished-at="2024-02-29T15:16:04 IST" duration-ms="50190">
+  <suite started-at="2024-02-29T15:53:54 IST" name="Suite" finished-at="2024-02-29T15:55:13 IST" duration-ms="79229">
     <groups>
     </groups>
-    <test started-at="2024-02-29T15:15:14 IST" name="Default test" finished-at="2024-02-29T15:16:04 IST" duration-ms="50190">
-      <class name="com.Lumen.YourStore.Tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:16 IST" name="setUp" finished-at="2024-02-29T15:15:23 IST" duration-ms="6728" status="PASS">
+    <test started-at="2024-02-29T15:53:54 IST" name="Test" finished-at="2024-02-29T15:55:13 IST" duration-ms="79229">
+      <class name="com.Lumen.YourStore.Tests.SearchPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.SearchPageTest@663c9e7a]" started-at="2024-02-29T15:53:54 IST" name="setUp" finished-at="2024-02-29T15:53:58 IST" duration-ms="3611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:23 IST" name="verifyLoginWithExcelData" data-provider="LoginData" finished-at="2024-02-29T15:15:31 IST" duration-ms="7867" status="FAIL">
+        <test-method signature="checksearchpageBreadCrumb()[pri:0, instance:com.Lumen.YourStore.Tests.SearchPageTest@663c9e7a]" started-at="2024-02-29T15:53:58 IST" name="checksearchpageBreadCrumb" finished-at="2024-02-29T15:54:02 IST" duration-ms="4787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checksearchpageBreadCrumb -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.SearchPageTest@663c9e7a]" started-at="2024-02-29T15:54:02 IST" name="tearDown" finished-at="2024-02-29T15:54:03 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Lumen.YourStore.Tests.SearchPageTest -->
+      <class name="com.Lumen.YourStore.Tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:03 IST" name="setUp" finished-at="2024-02-29T15:54:06 IST" duration-ms="3038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithInvalidExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:06 IST" name="verifyLoginWithInvalidExcelData" data-provider="LoginData" finished-at="2024-02-29T15:54:12 IST" duration-ms="5498" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[gowda.sushanthgowda95@gmail.com]]>
+                <![CDATA[gowda.sushanthgowda5@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -24,62 +38,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [null] but found [My Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [null] but found [My Account]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.Lumen.YourStore.Tests.LoginPageTest.verifyLoginWithExcelData(LoginPageTest.java:61)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:31 IST" name="tearDown" finished-at="2024-02-29T15:15:32 IST" duration-ms="506" status="PASS">
+        </test-method> <!-- verifyLoginWithInvalidExcelData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:12 IST" name="tearDown" finished-at="2024-02-29T15:54:12 IST" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:32 IST" name="setUp" finished-at="2024-02-29T15:15:36 IST" duration-ms="3905" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:12 IST" name="setUp" finished-at="2024-02-29T15:54:15 IST" duration-ms="2810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:36 IST" name="verifyLoginWithExcelData" data-provider="LoginData" finished-at="2024-02-29T15:15:47 IST" duration-ms="11162" status="FAIL">
+        <test-method signature="verifyLoginWithInvalidExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:15 IST" name="verifyLoginWithInvalidExcelData" data-provider="LoginData" finished-at="2024-02-29T15:54:20 IST" duration-ms="5465" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,92 +62,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='My Account']"}
-  (Session info: chrome=121.0.6167.189)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e205ce1e39dcae3ab6a12549689388c5, findElement {using=xpath, value=//h1[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Ultron\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51575/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e205ce1e39dcae3ab6a12549689388c5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='My Account']"}
-  (Session info: chrome=121.0.6167.189)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e205ce1e39dcae3ab6a12549689388c5, findElement {using=xpath, value=//h1[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Ultron\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51575/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e205ce1e39dcae3ab6a12549689388c5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-at com.Lumen.YourStore.Pages.MyAccountPage.verifyPageHeader(MyAccountPage.java:42)
-at com.Lumen.YourStore.Tests.LoginPageTest.verifyLoginWithExcelData(LoginPageTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:47 IST" name="tearDown" finished-at="2024-02-29T15:15:47 IST" duration-ms="371" status="PASS">
+        </test-method> <!-- verifyLoginWithInvalidExcelData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:20 IST" name="tearDown" finished-at="2024-02-29T15:54:21 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:47 IST" name="setUp" finished-at="2024-02-29T15:15:51 IST" duration-ms="3957" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:21 IST" name="setUp" finished-at="2024-02-29T15:54:24 IST" duration-ms="2898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:15:51 IST" name="verifyLoginWithExcelData" data-provider="LoginData" finished-at="2024-02-29T15:16:03 IST" duration-ms="11681" status="FAIL">
+        <test-method signature="verifyLoginWithInvalidExcelData(java.lang.String,java.lang.String)[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:24 IST" name="verifyLoginWithInvalidExcelData" data-provider="LoginData" finished-at="2024-02-29T15:54:30 IST" duration-ms="6580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,88 +86,60 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='My Account']"}
-  (Session info: chrome=121.0.6167.189)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12a545a92704950e1440a873f40abcd6, findElement {using=xpath, value=//h1[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Ultron\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51601/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12a545a92704950e1440a873f40abcd6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='My Account']"}
-  (Session info: chrome=121.0.6167.189)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12a545a92704950e1440a873f40abcd6, findElement {using=xpath, value=//h1[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.189, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\Ultron\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51601}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51601/devtoo..., se:cdpVersion: 121.0.6167.189, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12a545a92704950e1440a873f40abcd6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
-at com.Lumen.YourStore.Pages.MyAccountPage.verifyPageHeader(MyAccountPage.java:42)
-at com.Lumen.YourStore.Tests.LoginPageTest.verifyLoginWithExcelData(LoginPageTest.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@3e27ba32]" started-at="2024-02-29T15:16:03 IST" name="tearDown" finished-at="2024-02-29T15:16:04 IST" duration-ms="1383" status="PASS">
+        </test-method> <!-- verifyLoginWithInvalidExcelData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:30 IST" name="tearDown" finished-at="2024-02-29T15:54:30 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:30 IST" name="setUp" finished-at="2024-02-29T15:54:33 IST" duration-ms="2922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginWithvalidData()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:33 IST" name="verifyLoginWithvalidData" finished-at="2024-02-29T15:54:39 IST" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithvalidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LoginPageTest@7e057f43]" started-at="2024-02-29T15:54:39 IST" name="tearDown" finished-at="2024-02-29T15:54:39 IST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Lumen.YourStore.Tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.Lumen.YourStore.Tests.RegistrationPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Lumen.YourStore.Tests.RegistrationPageTest@6c284af]" started-at="2024-02-29T15:54:39 IST" name="setup" finished-at="2024-02-29T15:54:42 IST" duration-ms="2837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyRegistrationPagewithMandatoryFields()[pri:1, instance:com.Lumen.YourStore.Tests.RegistrationPageTest@6c284af]" started-at="2024-02-29T15:54:42 IST" name="verifyRegistrationPagewithMandatoryFields" finished-at="2024-02-29T15:54:52 IST" duration-ms="9961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistrationPagewithMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.RegistrationPageTest@6c284af]" started-at="2024-02-29T15:54:52 IST" name="tearDown" finished-at="2024-02-29T15:54:52 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Lumen.YourStore.Tests.RegistrationPageTest -->
+      <class name="com.Lumen.YourStore.Tests.LandingPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Lumen.YourStore.Tests.LandingPageTest@6440112d]" started-at="2024-02-29T15:55:07 IST" name="setUp" finished-at="2024-02-29T15:55:10 IST" duration-ms="3043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLandingPageTitle()[pri:0, instance:com.Lumen.YourStore.Tests.LandingPageTest@6440112d]" started-at="2024-02-29T15:55:10 IST" name="verifyLandingPageTitle" finished-at="2024-02-29T15:55:13 IST" duration-ms="2895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Lumen.YourStore.Tests.LandingPageTest@6440112d]" started-at="2024-02-29T15:55:13 IST" name="tearDown" finished-at="2024-02-29T15:55:13 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Lumen.YourStore.Tests.LandingPageTest -->
+      <class name="com.Lumen.YourStore.Tests.DatePickerTrail">
+        <test-method signature="datePicker()[pri:0, instance:com.Lumen.YourStore.Tests.DatePickerTrail@5890e879]" started-at="2024-02-29T15:54:52 IST" name="datePicker" finished-at="2024-02-29T15:55:07 IST" duration-ms="14520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datePicker -->
+      </class> <!-- com.Lumen.YourStore.Tests.DatePickerTrail -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
