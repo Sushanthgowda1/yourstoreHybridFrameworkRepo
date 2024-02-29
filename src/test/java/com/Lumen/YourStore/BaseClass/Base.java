@@ -13,8 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.Lumen.YourStore.utils.customUtils;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Base {
 
 	WebDriver driver;
@@ -46,19 +44,18 @@ public class Base {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			System.out.println("launching chrome driver");
 			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
-			WebDriverManager.firefoxdriver().setup();
+	
 			driver = new FirefoxDriver();
 			System.out.println("launching firefox driver");
 			
 		} else if (browser.equalsIgnoreCase("io")) {
 
-			WebDriverManager.edgedriver().setup();
+	
 			driver = new EdgeDriver();
 			System.out.println("launching edgedriver driver");
 			
