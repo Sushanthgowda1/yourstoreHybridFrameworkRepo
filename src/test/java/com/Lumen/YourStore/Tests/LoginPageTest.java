@@ -17,7 +17,7 @@ import com.Lumen.YourStore.utils.XLutility;
 
 public class LoginPageTest extends Base {
 
-	public WebDriver driver;
+	WebDriver driver;
 	LandingPage landingPage;
 	LoginPage loginPage;
 	MyAccountPage myAccount;

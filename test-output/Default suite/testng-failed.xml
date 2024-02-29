@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Lumen.YourStore.Tests.logintest">
+      <class name="com.Lumen.YourStore.Tests.LoginPageTest">
         <methods>
-          <include name="loginTest"/>
+          <include name="verifyLoginWithExcelData" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Lumen.YourStore.Tests.logintest -->
+      </class> <!-- com.Lumen.YourStore.Tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
